@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         
         colorView.layer.cornerRadius = 18
         
-        redIndicatoreLabel.text = "\(redSlider.value)"
-        greenIndicatoreLabel.text = "\(greenSlider.value)"
-        blueIndicatoreLabel.text = "\(blueSlider.value)"
+        changeLabel(redIndicatoreLabel, value: CGFloat(round(redSlider.value * 100)) / 100)
+        changeLabel(greenIndicatoreLabel, value: CGFloat(round(greenSlider.value * 100)) / 100)
+        changeLabel(blueIndicatoreLabel, value: CGFloat(round(blueSlider.value * 100)) / 100)
     }
 
     @IBAction func ChangeColor(_ sender: UISlider) {
@@ -80,7 +80,8 @@ extension ViewController {
         
         switch value {
             
-        case 0.1,
+        case 0.0,
+            0.1,
             0.2,
             0.3,
             0.4,
