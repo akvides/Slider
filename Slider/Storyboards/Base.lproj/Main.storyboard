@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SGa-rX-egB">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
+        <scene sceneID="DbP-C5-lL5">
+            <objects>
+                <viewController id="SGa-rX-egB" customClass="StartViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2d-vr-NhV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2C-N6-KMQ">
+                                <rect key="frame" x="20" y="599" width="335" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="63J-SZ-49y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="phY-Qo-Gzy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="phY-Qo-Gzy" firstAttribute="bottom" secondItem="H2C-N6-KMQ" secondAttribute="bottom" constant="20" id="Jqs-9i-hX0"/>
+                            <constraint firstItem="H2C-N6-KMQ" firstAttribute="leading" secondItem="phY-Qo-Gzy" secondAttribute="leading" constant="20" id="jH1-qT-jvI"/>
+                            <constraint firstItem="phY-Qo-Gzy" firstAttribute="trailing" secondItem="H2C-N6-KMQ" secondAttribute="trailing" constant="20" id="pbi-hu-isw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnE-Qp-xhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="61"/>
+        </scene>
+        <!--Settings View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJT-VI-dWe">
@@ -87,23 +118,14 @@
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="RedSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-BO-l2p">
                                                         <rect key="frame" x="-2" y="0.0" width="241" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
-                                                        <connections>
-                                                            <action selector="ChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="hb3-i6-CGW"/>
-                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="GreenSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-i4-MHD">
                                                         <rect key="frame" x="-2" y="45.5" width="241" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
-                                                        <connections>
-                                                            <action selector="ChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="qi7-1B-5D2"/>
-                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="BlueSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-xD-rp7">
                                                         <rect key="frame" x="-2" y="91" width="241" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
-                                                        <connections>
-                                                            <action selector="ChangeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="cbs-2l-mPU"/>
-                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -124,21 +146,18 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueIndicatoreLabel" destination="PJ7-Eg-fa1" id="40p-EG-7dv"/>
                         <outlet property="blueSlider" destination="yJX-xD-rp7" id="QeK-0Z-xCt"/>
-                        <outlet property="colorView" destination="pJT-VI-dWe" id="msa-zh-40T"/>
-                        <outlet property="greenIndicatoreLabel" destination="5gx-2q-C3n" id="BAQ-HW-JO1"/>
-                        <outlet property="greenSlider" destination="IQg-i4-MHD" id="ZxV-Xq-8xp"/>
-                        <outlet property="redIndicatoreLabel" destination="THV-eW-AfC" id="BZN-2W-89A"/>
-                        <outlet property="redSlider" destination="wJU-BO-l2p" id="7WC-nT-mr0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43.125" y="68.661971830985919"/>
+            <point key="canvasLocation" x="417" y="61"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
