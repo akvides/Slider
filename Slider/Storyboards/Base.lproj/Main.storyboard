@@ -87,10 +87,10 @@
                                         <rect key="frame" x="61" y="0.0" width="282" height="111.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZKU-Tc-2rd">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="111.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="111.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.23" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkH-AY-bZM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkH-AY-bZM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
@@ -98,7 +98,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3t7-87-Rck">
-                                                        <rect key="frame" x="0.0" y="45.5" width="43" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="45.5" width="48" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
@@ -106,7 +106,7 @@
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Mb-Fb-91u">
-                                                        <rect key="frame" x="0.0" y="91" width="43" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="91" width="48" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
@@ -115,31 +115,31 @@
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="43" id="Fd2-2O-4eX"/>
+                                                    <constraint firstAttribute="width" constant="48" id="Fd2-2O-4eX"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="IC1-E4-Rol">
-                                                <rect key="frame" x="53" y="0.0" width="229" height="111.5"/>
+                                                <rect key="frame" x="58" y="0.0" width="224" height="111.5"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="RedSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-BO-l2p">
-                                                        <rect key="frame" x="-2" y="0.0" width="233" height="21.5"/>
+                                                        <rect key="frame" x="-2" y="0.0" width="228" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="w9U-Cw-oom"/>
+                                                            <action selector="changeColorFromSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="1ic-Hh-cSQ"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="GreenSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-i4-MHD">
-                                                        <rect key="frame" x="-2" y="45.5" width="233" height="21.5"/>
+                                                        <rect key="frame" x="-2" y="45.5" width="228" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <connections>
-                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="B0U-KN-pcK"/>
+                                                            <action selector="changeColorFromSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="MDe-TU-gNe"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="BlueSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-xD-rp7">
-                                                        <rect key="frame" x="-2" y="91" width="233" height="21.5"/>
+                                                        <rect key="frame" x="-2" y="91" width="228" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <connections>
-                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="vXp-nO-rV3"/>
+                                                            <action selector="changeColorFromSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="JQs-vL-y1h"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
