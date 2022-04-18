@@ -93,16 +93,25 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Xrj-9T-GUp"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3t7-87-Rck">
                                                         <rect key="frame" x="0.0" y="45.5" width="43" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="io8-rm-xpM"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Mb-Fb-91u">
                                                         <rect key="frame" x="0.0" y="91" width="43" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="EwP-yh-EzK"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -115,14 +124,23 @@
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="RedSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-BO-l2p">
                                                         <rect key="frame" x="-2" y="0.0" width="233" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="w9U-Cw-oom"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="GreenSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-i4-MHD">
                                                         <rect key="frame" x="-2" y="45.5" width="233" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="B0U-KN-pcK"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="BlueSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-xD-rp7">
                                                         <rect key="frame" x="-2" y="91" width="233" height="21.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="vXp-nO-rV3"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -142,6 +160,15 @@
                             <constraint firstItem="3G3-v2-UW3" firstAttribute="top" secondItem="pJT-VI-dWe" secondAttribute="bottom" constant="20" id="n5T-Lx-caI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="yJX-xD-rp7" id="jOR-ov-d3Q"/>
+                        <outlet property="blueTextField" destination="7Mb-Fb-91u" id="909-R7-Urw"/>
+                        <outlet property="colorView" destination="pJT-VI-dWe" id="06w-Mw-OqB"/>
+                        <outlet property="greenSlider" destination="IQg-i4-MHD" id="Nk9-Mg-iqA"/>
+                        <outlet property="greenTextField" destination="3t7-87-Rck" id="Io1-kD-Xij"/>
+                        <outlet property="redSlider" destination="wJU-BO-l2p" id="f6c-3F-3Um"/>
+                        <outlet property="redTextField" destination="bkH-AY-bZM" id="m1i-jI-7ve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
